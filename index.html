@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+</head>
+<body>
+    <h1>Formulário de Contato</h1>
+    <form action="/enviar" method="post">
+        <!-- Nome Completo -->
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- Telefone -->
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone">
+        <br><br>
+
+        <!-- Mensagem/Pergunta -->
+        <label for="mensagem">Mensagem/Pergunta:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea>
+        <br><br>
+
+        <!-- Receber Novidades -->
+        <label for="novidades">
+            <input type="checkbox" id="novidades" name="novidades"> Receber novidades?
+        </label>
+        <br><br>
+
+        <!-- Botão de Enviar -->
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
